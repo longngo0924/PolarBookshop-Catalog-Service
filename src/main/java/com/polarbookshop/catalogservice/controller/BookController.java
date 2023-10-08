@@ -1,5 +1,7 @@
 package com.polarbookshop.catalogservice.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,8 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.polarbookshop.catalogservice.entity.Book;
 import com.polarbookshop.catalogservice.service.BookService;
-
-import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("books")
